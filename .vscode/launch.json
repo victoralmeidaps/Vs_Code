@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Iniciar Deadpool Electron",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "/usr/bin/env",
+      "runtimeArgs": [
+        "-u",
+        "ELECTRON_RUN_AS_NODE",
+        "${workspaceFolder}/node_modules/.bin/electron"
+      ],
+      "args": ["."],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Anexar por ID do processo",
+      "type": "node",
+      "request": "attach",
+      "processId": "${command:PickProcess}",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

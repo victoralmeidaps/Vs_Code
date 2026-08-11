@@ -1,0 +1,7 @@
+prioridade;obrigacao;vencimento;valor_estimado;valor_exato;ja_reservado;falta_reservar;fonte_prioritaria;status;proxima_acao
+1;Água e luz;17/08/2026;610,40;;;;Uber líquida e caixa disponível;pendente;Preencher valores individuais e separar primeiro
+2;Gasolina;20/08/2026;A confirmar;;;;Uber líquida;pendente;Informar valor da conta e separar da gasolina operacional
+3;Mãe;27/08/2026;3.001,24;;;;Uber líquida e Pix comercial creditado;pendente;Atualizar somente com caixa real
+4;Aluguel;30/08/2026;A confirmar;;;;Uber líquida e Pix comercial creditado;pendente;Informar valor exato e reservar até 29/08
+5;Escola;03/09/2026;1.600,67;;;;Uber líquida e Pix comercial creditado;pendente;Confirmar valor exato com a escola
+6;Pet e aprendizado;Após essenciais;508,67;;;;Somente excedente;bloqueado;Liberar depois das prioridades 1 a 5

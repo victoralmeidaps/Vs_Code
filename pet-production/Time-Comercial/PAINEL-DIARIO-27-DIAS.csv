@@ -1,0 +1,28 @@
+dia;data;dia_semana;bloco_principal;abordagens_planejadas;abordagens_enviadas;respostas;chamadas_qualificacao;propostas;pix_recebido;valor_recebido;proximo_passo;observacao;status_registro
+1;10/08/2026;segunda-feira;Caixa inicial e 10 contatos quentes;0;;;;;;;Registrar caixa aluguel e gasolina;;planejado
+2;11/08/2026;terça-feira;Água/luz e 5 rascunhos;0;;;;;;;Completar 20 contatos;;planejado
+3;12/08/2026;quarta-feira;Reserva água/luz e mais 5 rascunhos;0;;;;;;;Aprovar lote de mensagens;;planejado
+4;13/08/2026;quinta-feira;Abordagens aprovadas;5;;;;;;;Registrar respostas;;planejado
+5;14/08/2026;sexta-feira;Qualificação e checkpoint;5;;;;;;;Ativar Reativação se necessário;;planejado
+6;15/08/2026;sábado;Reserva e preparação da rota alternativa;0;;;;;;;Confirmar água/luz;;planejado
+7;16/08/2026;domingo;Folga;0;;;;;;;Folga;;planejado
+8;17/08/2026;segunda-feira;Água/luz e rota alternativa se acionada;5;;;;;;;Registrar pagamento ou lacuna;;planejado
+9;18/08/2026;terça-feira;Reserva gasolina e novas abordagens;5;;;;;;;Atualizar próximo vencimento;;planejado
+10;19/08/2026;quarta-feira;Qualificação e gasolina;5;;;;;;;Não contar proposta como caixa;;planejado
+11;20/08/2026;quinta-feira;Gasolina e kickoff de cliente pago;0;;;;;;;Registrar saldo após pagamento;;planejado
+12;21/08/2026;sexta-feira;Reserva mãe e revisão de conversão;5;;;;;;;Aplicar checkpoint;;planejado
+13;22/08/2026;sábado;Revisão e preparação;0;;;;;;;Sem pendência sem data;;planejado
+14;23/08/2026;domingo;Folga;0;;;;;;;Folga;;planejado
+15;24/08/2026;segunda-feira;Priorizar decisões da semana;5;;;;;;;Atualizar reserva da mãe;;planejado
+16;25/08/2026;terça-feira;Qualificação proposta e aceite;5;;;;;;;Próximo passo datado;;planejado
+17;26/08/2026;quarta-feira;Reserva mãe e entrega paga;0;;;;;;;Sem aumento de escopo;;planejado
+18;27/08/2026;quinta-feira;Pagamento mãe e follow-up;5;;;;;;;Registrar pagamento ou lacuna;;planejado
+19;28/08/2026;sexta-feira;Reserva aluguel e execução paga;0;;;;;;;Conciliar Pix e Uber;;planejado
+20;29/08/2026;sábado;Proteção do aluguel;0;;;;;;;Registrar reserva antes do domingo;;planejado
+21;30/08/2026;domingo;Vencimento aluguel e folga;0;;;;;;;Confirmar pagamento ou lacuna;;planejado
+22;31/08/2026;segunda-feira;Reserva escola e oportunidades quentes;5;;;;;;;Encerrar ou avançar;;planejado
+23;01/09/2026;terça-feira;Reativação paga dentro da capacidade;5;;;;;;;Pix antes do kickoff;;planejado
+24;02/09/2026;quarta-feira;Proteção da escola e entregas;0;;;;;;;Nenhum prazo sem insumos;;planejado
+25;03/09/2026;quinta-feira;Escola e conferência de caixa;0;;;;;;;Registrar pagamento ou lacuna;;planejado
+26;04/09/2026;sexta-feira;Follow-up respeitoso;5;;;;;;;Registrar resultado;;planejado
+27;05/09/2026;sábado;Fechamento da operação;0;;;;;;;Conciliar caixa e aprendizados;;planejado

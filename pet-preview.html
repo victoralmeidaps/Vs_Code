@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deadpool Pet Preview</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #070b14;
+      --panel: rgba(17, 24, 39, 0.96);
+      --line: rgba(255,255,255,0.14);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #ef4444;
+      --bubble: rgba(255,255,255,0.92);
+      --bubble-text: #0f172a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at top, #16203a 0%, var(--bg) 70%);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .scene {
+      width: min(92vw, 560px);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: 0 24px 45px rgba(0,0,0,0.36);
+      backdrop-filter: blur(14px);
+    }
+
+    .scene-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.24rem;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      color: #fde68a;
+      background: rgba(253, 230, 138, 0.16);
+      border: 1px solid rgba(253, 230, 138, 0.24);
+      border-radius: 999px;
+      padding: 6px 10px;
+    }
+
+    .pet-stage {
+      position: relative;
+      min-height: 340px;
+      display: grid;
+      place-items: center;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      overflow: hidden;
+      padding: 20px 20px 40px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    .speech-bubble {
+      position: absolute;
+      top: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: min(78%, 290px);
+      padding: 14px 16px;
+      border-radius: 18px 18px 6px 18px;
+      background: var(--bubble);
+      color: var(--bubble-text);
+      box-shadow: 0 16px 26px rgba(0,0,0,0.22);
+      font-size: 0.95rem;
+      line-height: 1.45;
+      z-index: 2;
+    }
+
+    .speech-bubble::after {
+      content: "";
+      position: absolute;
+      left: 26px;
+      bottom: -10px;
+      width: 20px;
+      height: 20px;
+      background: var(--bubble);
+      transform: rotate(45deg);
+      border-radius: 3px;
+    }
+
+    .pet {
+      position: relative;
+      width: 240px;
+      height: 280px;
+      display: grid;
+      place-items: center;
+      margin-top: 58px;
+      transition: transform 220ms ease, filter 220ms ease;
+      z-index: 1;
+      will-change: transform;
+      filter: saturate(1.05);
+    }
+
+    .pet img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 20px 28px rgba(0,0,0,0.36));
+      transform-origin: center bottom;
+      transition: transform 220ms ease;
+      will-change: transform;
+    }
+
+    .pet::after {
+      content: "";
+      position: absolute;
+      bottom: 18px;
+      width: 72%;
+      height: 16px;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.28);
+      filter: blur(10px);
+      z-index: -1;
+    }
+
+    .pet.state-idle {
+      animation: bob 2.2s ease-in-out infinite;
+    }
+    .pet.state-idle img {
+      animation: idle-sway 2.2s ease-in-out infinite;
+    }
+    .pet.state-running-right {
+      animation: run-loop 0.45s cubic-bezier(.2,.8,.2,1) infinite;
+      transform: translateX(12px) rotate(-6deg);
+    }
+    .pet.state-running-right img {
+      transform: rotate(-6deg) scale(1.03);
+      animation: run-bounce 0.45s ease-in-out infinite;
+    }
+    .pet.state-waving {
+      animation: wave-pulse 0.8s ease-in-out infinite alternate;
+      transform: translateY(-4px);
+    }
+    .pet.state-waving img {
+      transform: rotate(-8deg) translateY(-4px);
+      animation: wave-tilt 0.8s ease-in-out infinite alternate;
+    }
+    .pet.state-review {
+      animation: review-breathe 1.25s ease-in-out infinite;
+      transform: translateX(-2px) rotate(2deg);
+    }
+    .pet.state-review img {
+      transform: rotate(2deg) scale(1.01);
+      animation: review-focus 1.25s ease-in-out infinite;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    button {
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    button.active {
+      background: linear-gradient(135deg, var(--accent), #fb923c);
+      border-color: transparent;
+    }
+
+    .hint {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @keyframes bob {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes idle-sway {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(-2deg); }
+      75% { transform: rotate(2deg); }
+    }
+
+    @keyframes run-loop {
+      0%, 100% { transform: translateX(10px) rotate(-6deg); }
+      50% { transform: translateX(-6px) rotate(4deg); }
+    }
+
+    @keyframes run-bounce {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-4px) scale(1.015); }
+    }
+
+    @keyframes wave-pulse {
+      0% { transform: translateY(-4px) rotate(-1deg); }
+      100% { transform: translateY(2px) rotate(2deg); }
+    }
+
+    @keyframes wave-tilt {
+      0% { transform: rotate(-8deg) translateY(-4px); }
+      100% { transform: rotate(-3deg) translateY(-1px); }
+    }
+
+    @keyframes review-breathe {
+      0%, 100% { transform: translateX(-2px) rotate(2deg) scale(1); }
+      50% { transform: translateX(2px) rotate(-1deg) scale(1.02); }
+    }
+
+    @keyframes review-focus {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+  </style>
+</head>
+<body>
+  <main class="scene">
+    <div class="scene-header">
+      <h1>Deadpool Pet</h1>
+      <span class="pill">balão de diálogo</span>
+    </div>
+
+    <section class="pet-stage">
+      <div class="speech-bubble" id="speechBubble">Criador, o pet está pronto para agir com presença.</div>
+      <div class="pet state-idle" id="pet">
+        <img src="./deadpool-avatar.png" alt="Deadpool Pet em estado ativo" />
+      </div>
+    </section>
+
+    <div class="controls" id="states">
+      <button class="active" data-state="idle">Idle</button>
+      <button data-state="running-right">Running</button>
+      <button data-state="waving">Waving</button>
+      <button data-state="review">Review</button>
+    </div>
+
+    <div class="hint" id="hint">Troque os estados para ver o pet reagir com poses e falas diferentes.</div>
+  </main>
+
+  <script>
+    const messages = {
+      idle: 'Criador, o pet está pronto para agir com presença.',
+      'running-right': 'Vamos seguir em frente, com energia e ritmo.',
+      waving: 'Ei, tudo bem? Eu estou aqui para te acompanhar.',
+      review: 'Vou revisar o contexto e te devolver um resumo claro.'
+    };
+
+    const petEl = document.getElementById('pet');
+    const bubbleEl = document.getElementById('speechBubble');
+
+    document.getElementById('states').addEventListener('click', (event) => {
+      const button = event.target.closest('button');
+      if (!button) return;
+
+      document.querySelectorAll('#states button').forEach((btn) => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const state = button.dataset.state;
+      petEl.className = `pet state-${state}`;
+      bubbleEl.textContent = messages[state] || messages.idle;
+    });
+  </script>
+</body>
+</html>
