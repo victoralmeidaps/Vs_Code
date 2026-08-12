@@ -39,7 +39,14 @@
     // gerava 145 violações só na agencia-marketing — puro ruído de diff.
     "MD060": false,
     // MD025: múltiplos H1 são comuns em docs de skill/prompt. Desligada.
-    "MD025": false
+    "MD025": false,
+    // MD036 no-emphasis-as-heading: DESLIGADA e é uma decisão deliberada.
+    // Medido em 659 arquivos do corpus real: 84 ocorrências, e a regra NÃO é
+    // auto-corrigível — ou seja, 84 commits bloqueados exigindo edição manual.
+    // Usar **negrito** como subtítulo é o estilo da casa; a regra briga com ele.
+    // Se um dia o Markdown virar site público, reavaliar: aí a hierarquia de
+    // heading passa a importar para navegação e leitor de tela.
+    "MD036": false
   },
 
   // NAO definir "globs" aqui. Com globs no arquivo, o markdownlint-cli2 IGNORA
