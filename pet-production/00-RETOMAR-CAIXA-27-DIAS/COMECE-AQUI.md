@@ -15,6 +15,7 @@ Preencha somente: repasse do app, dinheiro/gorjetas, combustível, pedágios e o
 1. Consulte a [agenda por vencimento](../Time-Comercial/AGENDA-27-DIAS.md).
 2. Atualize as [prioridades de caixa](../Time-Comercial/PRIORIDADES-CAIXA.csv) quando tiver os valores das contas.
 3. Retome o [plano completo](../Time-Comercial/PLANO-CAIXA-27-DIAS.md) para a parte comercial.
+4. Para ver os chats de prospecção organizados por status, abra a pasta [`Chats`](../Time-Comercial/Chats/) no VS Code: cada conversa é um arquivo, e o arquivo mora na subpasta do status atual (em aberto, em análise, em processamento, finalizado). Todo fim de dia, mova cada arquivo para a pasta certa — veja o passo a passo em [`Chats/README.md`](../Time-Comercial/Chats/README.md).
 
 ## Regra de caixa
 

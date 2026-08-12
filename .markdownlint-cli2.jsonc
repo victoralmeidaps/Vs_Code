@@ -1,0 +1,63 @@
+// markdownlint-cli2 config — higiene de Markdown
+// Doc das regras: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+{
+  "config": {
+    "default": true,
+
+    // ---- Núcleo: o que você pediu ----
+    // MD034 no-bare-urls: URL/e-mail precisa de <> , [texto](url) ou code span
+    "MD034": true,
+
+    // ---- Regras irmãs (fixáveis, alto retorno) ----
+    // MD040: todo code fence precisa declarar a linguagem
+    "MD040": true,
+    // MD012: no máximo 1 linha em branco consecutiva
+    "MD012": { "maximum": 1 },
+    // MD047: arquivo termina com exatamente uma newline
+    "MD047": true,
+    // MD009: sem espaço no fim da linha (2 = quebra de linha intencional)
+    "MD009": { "br_spaces": 2 },
+    // MD022 / MD031 / MD032: linha em branco antes e depois de heading,
+    // code fence e lista — sem isso o CommonMark não renderiza direito
+    "MD022": true,
+    "MD031": true,
+    "MD032": true,
+    // MD051: link âncora (#secao) precisa apontar pra um heading existente
+    "MD051": true,
+
+    // ---- Afrouxadas de propósito ----
+    // MD013 line-length: desligada. Reflow de linha em conteúdo de marketing
+    // gera diff gigante e zero ganho real.
+    "MD013": false,
+    // MD033 inline HTML: liberado — necessário pra <br>, <details>, <img>
+    "MD033": false,
+    // MD041: nem todo .md começa com H1 (front matter, partials, fragmentos)
+    "MD041": false,
+    // MD024: headings duplicados são normais em changelogs; só bloqueia irmãos
+    "MD024": { "siblings_only": true },
+    // MD060 table-column-style: DESLIGADA. Alinhamento de pipe é cosmético e
+    // gerava 145 violações só na agencia-marketing — puro ruído de diff.
+    "MD060": false,
+    // MD025: múltiplos H1 são comuns em docs de skill/prompt. Desligada.
+    "MD025": false
+  },
+
+  // NAO definir "globs" aqui. Com globs no arquivo, o markdownlint-cli2 IGNORA
+  // os arquivos passados na linha de comando e varre o repo inteiro — o hook de
+  // commit passa a reprovar por violacao em arquivo que voce nem tocou.
+  // Passe o glob na chamada: markdownlint-cli2 "**/*.md" "#node_modules"
+  "ignores": [
+    "node_modules/**",
+    ".git/**",
+    "dist/**",
+    "build/**",
+    ".next/**",
+    "vendor/**",
+    "CHANGELOG.md"
+  ]
+
+  // NAO colocar "fix": true aqui. Com a flag no arquivo, QUALQUER invocacao do
+  // markdownlint-cli2 altera arquivos — inclusive um comando de diagnostico que
+  // voce achou que so ia reportar. Passe --fix explicitamente na linha de
+  // comando quando quiser corrigir.
+}

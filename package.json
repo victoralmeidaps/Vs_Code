@@ -7,10 +7,15 @@
     "deadpool:widget": "env -u ELECTRON_RUN_AS_NODE electron .",
     "start": "env -u ELECTRON_RUN_AS_NODE electron .",
     "check": "node --check main.js && node --check preload.js && node --check deadpool-agent.js && node --check agent/config.js && node --check agent/http.js && node --check agent/runtime.js && node --check agent/orchestrator.js && node --check agent/model-router.js && node --check agent/tools.js && node --check agent/providers/openai-provider.js && node --check agent/providers/claude-provider.js",
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "prepare": "husky",
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "lint:md:fix": "markdownlint-cli2 --fix \"**/*.md\" \"#node_modules\""
   },
   "devDependencies": {
-    "electron": "^43.3.0"
+    "electron": "^43.3.0",
+    "husky": "^9.1.7",
+    "markdownlint-cli2": "^0.23.2"
   },
   "allowScripts": {
     "electron@43.3.0": true

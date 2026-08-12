@@ -1,4 +1,16 @@
 {
   "files.autoSave": "afterDelay",
-  "window.openFilesInNewWindow": "off"
+  "window.openFilesInNewWindow": "off",
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit"
+    },
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
+  },
+  "markdownlint.configFile": ".markdownlint-cli2.jsonc"
 }

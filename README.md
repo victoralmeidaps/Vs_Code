@@ -10,7 +10,7 @@ Assistente desktop local em Electron com um unico orquestrador para OpenAI e Cla
 cp .env.example .env
 ```
 
-2. Preencha no `.env` pelo menos uma chave:
+1. Preencha no `.env` pelo menos uma chave:
 
 ```text
 OPENAI_API_KEY=sua_chave
@@ -21,7 +21,7 @@ Para usar `dual-review`, configure as duas. O arquivo `.env` ja esta ignorado pe
 
 O indicador da interface confirma apenas que uma chave foi configurada. A autenticacao e a disponibilidade do modelo so ficam validadas depois de uma chamada real ao provedor.
 
-3. Instale e execute:
+1. Instale e execute:
 
 ```bash
 npm install

@@ -1,0 +1,62 @@
+# Versao AUTONOMA: roda nos servidores do GitHub, corrige e commita de volta.
+# Nao depende do seu Mac estar ligado.
+#
+# PRE-REQUISITO no repo:
+#   Settings > Actions > General > Workflow permissions
+#     -> marcar "Read and write permissions"
+name: markdownlint-autofix
+
+on:
+  push:
+    branches: ["**"]
+    paths: ["**/*.md", "**/*.markdown", ".markdownlint-cli2.jsonc"]
+  # Roda tambem 1x por semana, pra pegar o que entrou por edicao via web/mobile
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mdlint-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  autofix:
+    runs-on: ubuntu-latest
+    # PR de fork tem GITHUB_TOKEN somente-leitura: o push falharia.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "20"
+
+      - name: Corrigir Markdown
+        id: fix
+        continue-on-error: true
+        run: npx --yes markdownlint-cli2@0.23.2 --fix "**/*.md" "#node_modules"
+
+      - name: Commitar as correcoes
+        run: |
+          if [ -z "$(git status --porcelain -- '*.md' '*.markdown')" ]; then
+            echo "Nada a corrigir."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*.md' '*.markdown'
+          git commit -m "chore: corrige markdownlint (MD034 e afins) [skip ci]"
+          git push
+
+      # Se sobrou violacao NAO auto-fixavel (ex.: MD040, MD051), reprova o job
+      # depois de ja ter commitado o que dava pra corrigir.
+      - name: Reprovar se sobrou violacao manual
+        if: steps.fix.outcome == 'failure'
+        run: |
+          echo "::error::Sobraram violacoes que exigem correcao manual (veja o log do passo 'Corrigir Markdown')."
+          exit 1

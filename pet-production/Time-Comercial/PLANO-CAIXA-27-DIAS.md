@@ -106,7 +106,7 @@ O `PIPELINE-PROSPECCAO.csv` registra oferta, aprovação da mensagem, tempo de p
 
 Se, no checkpoint do dia 5, a oferta não gerar conversa qualificada, preparar a segunda rota no dia seguinte e iniciar abordagens aprovadas a partir de 17/08. Não esperar até o fim do mês: a alternativa precisa ter tempo de gerar caixa para os vencimentos de 27/08, 30/08 e 03/09.
 
-**Reativação Express de Agenda — R$ 597,00 à vista**
+### Reativação Express de Agenda — R$ 597,00 à vista
 
 Escopo: uma chamada de diagnóstico, dois roteiros de retorno, uma planilha de controle e uma reunião de treinamento para que a própria equipe retome até 30 contatos pelo canal oficial do cliente. Sem extrair dados, enviar mensagens em nome do cliente ou prometer conversões.
 
