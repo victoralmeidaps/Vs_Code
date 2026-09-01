@@ -65,6 +65,13 @@ npm test
 
 Os testes usam provedores simulados e nao consomem creditos de API.
 
+## Versao web responsiva
+
+Abra `deadpool-web.html` a partir de um servidor HTTPS para usar a interface no
+iPhone. A pagina envia conversas para `POST /api/chat` no mesmo dominio, com o
+corpo `{ "message": "...", "history": [...] }`, e espera `{ "reply": "..." }`.
+As chaves dos provedores devem permanecer exclusivamente nesse backend.
+
 ## Arquivos principais
 
 - `main.js`: janela Electron e handlers IPC.

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f7f7" />
+  <title>Assistente</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f7f7f7;
+      --surface: #ffffff;
+      --assistant: #e9e9eb;
+      --accent: #007aff;
+      --text: #111111;
+      --muted: #6e6e73;
+      --line: #d1d1d6;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { min-height: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .app {
+      width: min(100%, 760px);
+      min-height: 100dvh;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      background: var(--surface);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: calc(14px + env(safe-area-inset-top)) 20px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .avatar {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    h1, p { margin: 0; }
+    h1 { font-size: 1.05rem; }
+    .subtitle { margin-top: 2px; color: var(--muted); font-size: 0.82rem; }
+
+    .messages {
+      overflow-y: auto;
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .message {
+      max-width: 84%;
+      padding: 10px 13px;
+      border-radius: 18px;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .message.assistant {
+      align-self: flex-start;
+      background: var(--assistant);
+      border-bottom-left-radius: 4px;
+    }
+
+    .message.user {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+      border-bottom-right-radius: 4px;
+    }
+
+    .composer {
+      display: flex;
+      gap: 8px;
+      align-items: flex-end;
+      padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.94);
+    }
+
+    textarea {
+      flex: 1;
+      min-height: 42px;
+      max-height: 120px;
+      resize: none;
+      border: 1px solid var(--line);
+      border-radius: 21px;
+      padding: 10px 14px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+      line-height: 1.35;
+    }
+
+    textarea:focus { outline: 3px solid rgba(0, 122, 255, 0.22); border-color: var(--accent); }
+
+    button {
+      min-width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    @media (min-width: 761px) {
+      body { padding: 24px; }
+      .app { min-height: calc(100dvh - 48px); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08); }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root { color-scheme: dark; --background: #000; --surface: #1c1c1e; --assistant: #3a3a3c; --text: #fff; --muted: #aeaeb2; --line: #38383a; }
+      .composer { background: rgba(28, 28, 30, 0.94); }
+      textarea { background: #2c2c2e; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="avatar" aria-hidden="true">A</div>
+      <div>
+        <h1>Assistente</h1>
+        <p class="subtitle">Pronto para ajudar</p>
+      </div>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite" aria-label="Histórico da conversa">
+      <p class="message assistant">Olá! Como posso ajudar?</p>
+    </section>
+
+    <form id="chat-form" class="composer">
+      <textarea id="message" aria-label="Sua mensagem" placeholder="Mensagem" rows="1"></textarea>
+      <button id="send" type="submit" aria-label="Enviar mensagem">↑</button>
+    </form>
+  </main>
+
+  <script>
+    const messages = document.getElementById("messages");
+    const form = document.getElementById("chat-form");
+    const input = document.getElementById("message");
+    const send = document.getElementById("send");
+    const history = [];
+
+    function addMessage(role, text) {
+      const message = document.createElement("p");
+      message.className = `message ${role}`;
+      message.textContent = text;
+      messages.append(message);
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    async function sendMessage(message) {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message, history }),
+      });
+
+      if (!response.ok) throw new Error("Não foi possível enviar a mensagem.");
+      const result = await response.json();
+      if (typeof result.reply !== "string" || !result.reply.trim()) {
+        throw new Error("Resposta inválida do serviço.");
+      }
+      return result.reply;
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const text = input.value.trim();
+      if (!text) return;
+
+      addMessage("user", text);
+      input.value = "";
+      input.style.height = "";
+      send.disabled = true;
+
+      try {
+        const reply = await sendMessage(text);
+        history.push({ role: "user", content: text }, { role: "assistant", content: reply });
+        addMessage("assistant", reply);
+      } catch {
+        addMessage("assistant", "Não foi possível conectar ao atendimento agora. Tente novamente em instantes.");
+      } finally {
+        send.disabled = false;
+        input.focus();
+      }
+    });
+
+    input.addEventListener("input", () => {
+      input.style.height = "auto";
+      input.style.height = `${Math.min(input.scrollHeight, 120)}px`;
+    });
+
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        form.requestSubmit();
+      }
+    });
+  </script>
+</body>
+</html>
