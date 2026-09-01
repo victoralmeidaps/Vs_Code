@@ -167,6 +167,7 @@
     const input = document.getElementById("message");
     const send = document.getElementById("send");
     const history = [];
+    const maxHistoryEntries = 20;
 
     function addMessage(role, text) {
       const message = document.createElement("p");
@@ -204,8 +205,10 @@
       try {
         const reply = await sendMessage(text);
         history.push({ role: "user", content: text }, { role: "assistant", content: reply });
+        history.splice(0, Math.max(0, history.length - maxHistoryEntries));
         addMessage("assistant", reply);
-      } catch {
+      } catch (error) {
+        console.error("Chat request failed:", error);
         addMessage("assistant", "Não foi possível conectar ao atendimento agora. Tente novamente em instantes.");
       } finally {
         send.disabled = false;
