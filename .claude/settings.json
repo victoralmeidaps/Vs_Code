@@ -14,7 +14,6 @@
       "Bash(npm install*)",
       "Bash(npm ci*)",
       "Bash(npx markdownlint-cli2*)",
-      "Bash(npx electron*)",
       "Bash(node *)",
       "Bash(git status*)",
       "Bash(git diff*)",

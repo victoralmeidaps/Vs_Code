@@ -1,8 +1,9 @@
 node_modules/
 .env
-.venv/
+.env.*
 *.log
 .DS_Store
-pet-production/decoded/
-pet-production/qa/
 .claude/settings.local.json
+
+# Dados reais da operacao (leads, contatos, caixa). Nunca versionar.
+dados/

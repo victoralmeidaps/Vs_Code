@@ -1,77 +1,40 @@
-# Deadpool Assistente
+# METVI — Branding & Performance
 
-Assistente desktop local em Electron com um unico orquestrador para OpenAI e Claude. O modelo executor pode usar ferramentas; no modo de dupla revisao, o segundo modelo revisa apenas o texto final e nunca executa a acao novamente.
+Base operacional da METVI: posicionamento, ofertas, processo comercial, marketing e controle financeiro em um só lugar.
 
-## Configuracao inicial
+## Comece aqui
 
-1. Crie o arquivo local de configuracao:
+Abra [COMECE-AQUI.md](COMECE-AQUI.md) para a próxima ação do dia.
 
-```bash
-cp .env.example .env
-```
+## Estrutura
 
-1. Preencha no `.env` pelo menos uma chave:
+| Pasta | Área | O que tem |
+|---|---|---|
+| [`01-marca/`](01-marca/) | Marca | Posicionamento, público ideal e mensagem central |
+| [`02-comercial/`](02-comercial/) | Comercial | Ofertas, aceites, mensagens, chats por status e modelo de pipeline |
+| [`03-marketing/`](03-marketing/) | Marketing | Landing page e peças de divulgação |
+| [`04-financeiro/`](04-financeiro/) | Financeiro | Plano de caixa, agenda e modelos de controle |
+| [`docs/`](docs/) | Operação interna | Guias de ferramentas e padrões do repositório |
+| `dados/` | Dados reais | Planilhas preenchidas (leads, caixa). Fica só na sua máquina, fora do Git |
 
-```text
-OPENAI_API_KEY=sua_chave
-ANTHROPIC_API_KEY=sua_chave
-```
+## Regras da casa
 
-Para usar `dual-review`, configure as duas. O arquivo `.env` ja esta ignorado pelo Git e as chaves permanecem no processo principal do Electron; elas nao sao expostas ao HTML.
+1. **Dado real não entra no Git.** Leads, contatos, valores e contas ficam em `dados/`. No repositório só sobem modelos vazios.
+2. **Um arquivo, um lugar.** Nada de cópia duplicada; se precisar referenciar, use link.
+3. **Nomes em minúsculas com hífen** (`oferta-sprint-conversao.md`). Exceção: planilhas de controle em `MAIÚSCULAS.csv`.
+4. **Nada externo sai sem aprovação do Victor**: mensagens, propostas, pagamentos e publicações.
 
-O indicador da interface confirma apenas que uma chave foi configurada. A autenticacao e a disponibilidade do modelo so ficam validadas depois de uma chamada real ao provedor.
+## Planilhas de controle
 
-1. Instale e execute:
-
-```bash
-npm install
-npm run deadpool:widget
-```
-
-O widget roda em instancia unica. Clique no avatar, escolha o modo e escreva a mensagem. `Enter` envia e `Shift+Enter` cria uma nova linha.
-
-## Modos
-
-- `Automatico`: usa o provedor principal e troca para o outro se a primeira chamada falhar.
-- `Dupla revisao`: um provedor executa a tarefa e o outro revisa somente a resposta final.
-- `Somente OpenAI`: força a Responses API da OpenAI.
-- `Somente Claude`: força a Messages API da Anthropic.
-
-O provedor principal e controlado por `DEADPOOL_PRIMARY_PROVIDER=openai|claude`.
-
-## Ferramentas da primeira versao
-
-- `get_weather`: consulta clima atual sem confirmacao.
-- `save_note`: salva nota local somente depois de confirmacao explicita.
-- `list_notes`: consulta notas locais sem alterar dados.
-
-As notas ficam no diretorio privado de dados do aplicativo, fora do repositorio. O executor de ferramentas e unico mesmo no modo de dupla revisao.
-
-## Seguranca
-
-- Renderer com `contextIsolation`, `sandbox` e sem Node.js.
-- Chaves acessiveis somente no processo principal.
-- IPC restrito por `preload.js`.
-- Permissoes de navegador negadas por padrao.
-- Escritas locais exigem confirmacao.
-- Chamadas de ferramenta sao executadas sequencialmente para impedir duplicidade.
-
-## Validacao
+Para começar uma planilha nova, copie o modelo para `dados/`:
 
 ```bash
-npm run check
-npm test
+cp 02-comercial/modelos/PIPELINE-PROSPECCAO.csv dados/
+cp 04-financeiro/modelos/*.csv dados/
 ```
 
-Os testes usam provedores simulados e nao consomem creditos de API.
+## Ferramentas
 
-## Arquivos principais
-
-- `main.js`: janela Electron e handlers IPC.
-- `preload.js`: ponte segura com a interface.
-- `deadpool-agent.js`: fachada do renderer.
-- `agent/orchestrator.js`: loop, confirmacoes e dupla revisao.
-- `agent/model-router.js`: selecao, fallback e revisor.
-- `agent/providers/`: adaptadores OpenAI e Claude.
-- `agent/tools.js`: registro e execucao unica de ferramentas.
-- `avatar-widget.html`: chat e estados visuais.
+- `npm install` instala o lint de Markdown e o hook de pré-commit.
+- `npm run lint:md` verifica os documentos; `npm run lint:md:fix` corrige o que for automático.
+- Detalhes em [docs/como-ativar-o-lint.md](docs/como-ativar-o-lint.md).
