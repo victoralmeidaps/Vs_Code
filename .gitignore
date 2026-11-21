@@ -5,3 +5,4 @@ node_modules/
 .DS_Store
 pet-production/decoded/
 pet-production/qa/
+.claude/settings.local.json
