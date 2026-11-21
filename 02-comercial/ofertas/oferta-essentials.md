@@ -7,19 +7,30 @@
 - 1 relatório semanal
 - Automação de follow-up e triagem inicial
 
-## Investimento
+## Investimento por prazo
 
-R$ 1.500/mês
+| Prazo | Mensalidade (a partir de) | Total do contrato |
+|---|---:|---:|
+| 3 meses | R$ 2.477,77 | R$ 7.433,31 |
+| 6 meses | R$ 2.077,77 | R$ 12.466,62 |
+| 12 meses | R$ 1.677,77 | R$ 20.133,24 |
 
-## Prazo de contrato
+Prazos acima de 12 meses: sob consulta, com mensalidade definida no aceite.
 
-| Opção | Duração |
-|---|---|
-| Trimestral | 3 meses |
-| Semestral | 6 meses |
-| Anual | 12 meses |
+### Argumento de prazo
 
-Prazos maiores que 12 meses podem ser fechados sob consulta.
+No anual, o cliente paga R$ 800,00 a menos por mês do que no trimestral (−32%) e garante uma das 6 vagas de atendimento pelo ano inteiro.
+
+## Capacidade
+
+Limite de **6 clientes recorrentes ativos** em atendimento e suporte. Com as vagas ocupadas, novos contratos entram em lista de espera. Só anunciar vagas que existem de fato.
+
+## Regras do contrato
+
+- **Renovação:** o cliente escolhe no aceite — automática pelo mesmo prazo ou mediante novo aceite.
+- **Cancelamento antecipado:** multa de 47% sobre o valor das mensalidades restantes.
+- **Itens não usados:** não acumulam. Antecipar ou adiar entregas para outro mês só com combinado prévio; pedido em cima da hora não é aceito e o item do mês é perdido.
+- **Kickoff:** 45 minutos.
 
 ## Mensagem de venda
 
