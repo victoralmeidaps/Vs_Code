@@ -27,10 +27,10 @@ Limite de **6 clientes recorrentes ativos** em atendimento e suporte. Com as vag
 
 Detalhes e exemplos no [aceite](../aceites/aceite-essentials.md).
 
-- **Implantação:** 3 meses R$ 1.477,77 · 6 meses R$ 977,77 · 12 meses isenta enquanto as mensalidades estiverem em dia.
+- **Implantação:** 3 meses R$ 1.477,77 · 6 meses R$ 977,77 · 12 meses isenta enquanto as mensalidades estiverem em dia (atraso acima de 7 dias torna devida a implantação do semestral).
 - **Aprovação:** cliente responde cada material em até 48 horas; sem resposta, o item não acumula.
 - **Itens não usados:** não acumulam. Antecipar ou adiar só com combinado até 5 dias úteis antes do fim do mês.
-- **Reajuste:** IPCA a cada 12 meses e na renovação.
+- **Reajuste:** IPCA a cada 12 meses e na renovação; se o IPCA for negativo ou zero, 7%.
 - **Renovação:** o cliente escolhe — automática (aviso de 30 dias) ou por novo aceite.
 - **Cancelamento antecipado:**
   - 3 meses: 47% das mensalidades restantes.
@@ -39,9 +39,11 @@ Detalhes e exemplos no [aceite](../aceites/aceite-essentials.md).
   - CPF: multa limitada a 10% das mensalidades restantes; 7 dias de arrependimento quando contratado online (art. 49 do CDC).
 - **Kickoff:** 45 minutos.
 
-## Upgrade
+## Volume adicional e upgrade
 
-Quem precisar de mais volume ou gestão de tráfego vai para um plano superior. O Essentials não ganha itens avulsos nem desconto extra. Escopo e preço do plano superior: `[A DEFINIR]`.
+- **Bloco adicional:** +17% sobre a mensalidade = +3 posts **ou** +5 variações de anúncio. Máximo de 2 blocos por mês.
+- Valor do bloco: 3 meses R$ 421,22 · 6 meses R$ 353,22 · 12 meses R$ 285,22.
+- Cliente que precisa de mais de 2 blocos por mês, ou de gestão de tráfego, vai para o plano superior. Escopo e preço do plano superior: `[A DEFINIR]`.
 
 ## Como apresentar os prazos
 

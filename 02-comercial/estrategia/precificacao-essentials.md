@@ -66,12 +66,49 @@ No 6 e no 12 meses a multa é atrelada ao desconto que o cliente recebeu, o que 
 | 6 meses | R$ 977,77 | 47% | R$ 2.240,73 |
 | 12 meses | Isenta (em dia) | 0% | R$ 1.677,77 |
 
-**Por que esses valores:** ficam no piso do mercado, compatível com o público (pequeno negócio local) e com o escopo enxuto do Essentials. A diferença de custo médio entre trimestral e anual sobe para **R$ 1.292,59/mês**, o que torna o anual a escolha óbvia sem pressão de venda. A isenção do anual é condicionada a pagamentos em dia (atraso acima de 10 dias torna devida a implantação do semestral).
+**Por que esses valores:** ficam no piso do mercado, compatível com o público (pequeno negócio local) e com o escopo enxuto do Essentials. A diferença de custo médio entre trimestral e anual sobe para **R$ 1.292,59/mês**, o que torna o anual a escolha óbvia sem pressão de venda. A isenção do anual é condicionada a pagamentos em dia (atraso acima de 7 dias torna devida a implantação do semestral).
 
 ## 5. Regras de qualidade adotadas
 
-1. **Reajuste anual pelo IPCA** a cada 12 meses e na renovação ([Mercado Pago](https://www.mercadopago.com.br/blog/agencias-marketing-fees-mensais-reajuste-automatico)).
+1. **Reajuste anual pelo IPCA** a cada 12 meses e na renovação; IPCA negativo ou zero aplica 7% ([Mercado Pago](https://www.mercadopago.com.br/blog/agencias-marketing-fees-mensais-reajuste-automatico)).
 2. **Aprovação em 48 horas.** Material sem resposta não acumula, e a produção das outras vagas não trava.
 3. **Verba mínima de mídia de R$ 1.000,00/mês**, paga direto à plataforma. Sem verba, o anúncio não gera dado e o relatório fica vazio.
-4. **Plano superior em vez de desconto.** Escopo e preço a definir.
+4. **Volume adicional em blocos de 17%** (seção 6) e plano superior para quem passar de 2 blocos. Escopo e preço do plano superior a definir.
 5. **Fidelidade explícita na venda**, com roteiro na oferta. Os casos de Reclame Aqui contra agências quase sempre começam com "me disseram que não tinha fidelidade" ([exemplo](https://www.reclameaqui.com.br/nso-marketing/cobranca-indevida-de-multa-por-cancelamento-de-contrato-de-marketing-digital-com-promessa-de-nao-fidelizacao-e-falhas-na-prestacao-do-servico_EYHsIxDLD74bSQzF/)).
+
+## 6. Volume adicional: os 17% fazem sentido?
+
+### Esforço estimado do Essentials por cliente/mês
+
+Estimativa de referência. Substitua pelas horas reais depois dos primeiros clientes.
+
+| Item | Quantidade | Horas |
+|---|---:|---:|
+| Posts (criação + revisão) | 10 × 1,5h | 15,0 |
+| Variações de anúncio | 5 × 1h | 5,0 |
+| Relatório semanal | 4,3 × 1h | 4,3 |
+| Manutenção da automação | — | 2,0 |
+| Atendimento e alinhamento | — | 3,0 |
+| **Total** | | **29,3h** |
+
+### Leitura
+
+- **17% ≈ 5 horas** de produção. Isso equivale a cerca de **+3 posts** ou **+5 variações de anúncio**. Esse é o bloco coerente.
+- **17% para "mais 5 posts" ficaria barato:** 5 posts ≈ 7,5h ≈ 26% do esforço. Por isso o bloco foi definido em 3 posts.
+- **Capacidade:** 6 clientes × 29,3h ≈ 176h/mês, quase uma pessoa em tempo integral. Se todos comprarem 2 blocos, sobe para ≈ 236h. Daí o limite de 2 blocos por mês por cliente.
+- **Incentivo ao prazo longo:** o bloco é 17% da mensalidade contratada, então o anual paga menos por bloco (R$ 285,22) que o trimestral (R$ 421,22). Mantém a lógica de premiar o prazo longo.
+
+### Quando migrar para o plano superior
+
+| Situação | Mensalidade 12 meses | Leitura |
+|---|---:|---|
+| Essentials | R$ 1.677,77 | Base |
+| Essentials + 1 bloco | R$ 1.962,99 | Ajuste pontual, faz sentido |
+| Essentials + 2 blocos | R$ 2.248,21 | Teto do Essentials |
+| Plano superior | `[A DEFINIR]` | Deve custar menos por item que Essentials + 2 blocos e incluir gestão de tráfego |
+
+**Conclusão:** os 17% são coerentes como **ajuste pontual** (1 a 2 blocos). Cliente que pede volume extra todo mês deve ir para o plano superior, que precisa existir com preço por item menor que o do Essentials + 2 blocos. Sem isso, o bloco vira desconto disfarçado e consome a capacidade das 6 vagas.
+
+### IPCA negativo com reajuste de 7%: ponto de atenção
+
+Com a regra adotada, IPCA de +0,5% gera reajuste de 0,5%, mas IPCA de −0,1% gera 7%. Em um questionamento, essa diferença pode ser vista como desproporcional. Alternativa mais defensável: **reajuste pelo maior valor entre o IPCA e um piso fixo** (ex.: 5%), aplicado sempre e informado na venda.

@@ -26,7 +26,7 @@ Marque uma opção.
 
 A implantação cobre diagnóstico, configuração da automação de follow-up e triagem, linha visual dos posts e estrutura dos anúncios. É paga junto com a primeira mensalidade.
 
-\* A isenção vale enquanto as mensalidades estiverem em dia. Mensalidade com mais de 10 dias de atraso torna devida a implantação do plano semestral (R$ 977,77).
+\* A isenção vale enquanto as mensalidades estiverem em dia. Mensalidade com mais de 7 dias de atraso torna devida a implantação do plano semestral (R$ 977,77).
 
 ## Escopo mensal incluído
 
@@ -34,6 +34,18 @@ A implantação cobre diagnóstico, configuração da automação de follow-up e
 2. 5 variações de anúncios.
 3. 1 relatório semanal de entregas e números.
 4. Automação de follow-up e triagem inicial.
+
+## Volume adicional
+
+- Cada **bloco adicional** acrescenta 17% sobre a mensalidade contratada e inclui, à escolha do cliente: **+3 posts** ou **+5 variações de anúncio**.
+- Máximo de 2 blocos por mês, contratados até 5 dias úteis antes do início do mês. Bloco não usado não acumula.
+- Necessidade acima de 2 blocos por mês indica migração para o plano superior.
+
+| Plano | Valor de 1 bloco (+17%) |
+|---|---:|
+| 3 meses | R$ 421,22 |
+| 6 meses | R$ 353,22 |
+| 12 meses | R$ 285,22 |
 
 ## Verba de mídia
 
@@ -64,7 +76,7 @@ Verba de mídia, produção de vídeo, sessão de fotos, envio de mensagens em n
 
 ## Reajuste
 
-A mensalidade é reajustada a cada 12 meses de contrato, e em toda renovação, pelo IPCA acumulado dos 12 meses anteriores. Se o índice for negativo, a mensalidade se mantém.
+A mensalidade é reajustada a cada 12 meses de contrato, e em toda renovação, pelo IPCA acumulado dos 12 meses anteriores. Se o IPCA acumulado for negativo ou zero, o reajuste é de 7%.
 
 ## Renovação
 
