@@ -37,11 +37,14 @@ A implantação cobre diagnóstico, configuração da automação de follow-up e
 
 ## Volume adicional
 
-- Cada **bloco adicional** acrescenta 17% sobre a mensalidade contratada e inclui, à escolha do cliente: **+3 posts** ou **+5 variações de anúncio**.
-- Máximo de 2 blocos por mês, contratados até 5 dias úteis antes do início do mês. Bloco não usado não acumula.
-- Necessidade acima de 2 blocos por mês indica migração para o plano superior.
+- O cliente pode contratar **no máximo 1 bloco adicional por mês**, com acréscimo de 17% sobre a mensalidade contratada.
+- O bloco é definido pelo esforço de produção (cerca de 5 horas) e o cliente escolhe um dos tipos:
+  - **Bloco Conteúdo:** +3 posts.
+  - **Bloco Anúncios:** +5 variações de anúncio.
+- Contratação até 5 dias úteis antes do início do mês. Bloco não usado não acumula.
+- Necessidade acima de 1 bloco por mês indica migração para o plano superior.
 
-| Plano | Valor de 1 bloco (+17%) |
+| Plano | Valor do bloco (+17%) |
 |---|---:|
 | 3 meses | R$ 421,22 |
 | 6 meses | R$ 353,22 |
@@ -76,7 +79,7 @@ Verba de mídia, produção de vídeo, sessão de fotos, envio de mensagens em n
 
 ## Reajuste
 
-A mensalidade é reajustada a cada 12 meses de contrato, e em toda renovação, pelo IPCA acumulado dos 12 meses anteriores. Se o IPCA acumulado for negativo ou zero, o reajuste é de 7%.
+A mensalidade é reajustada a cada 12 meses de contrato, e em toda renovação, pelo IPCA acumulado dos 12 meses anteriores. Se o IPCA acumulado for zero ou negativo, aplica-se o mesmo percentual do reajuste anterior; no primeiro reajuste, sem percentual anterior, a mensalidade se mantém.
 
 ## Renovação
 

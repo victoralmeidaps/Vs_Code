@@ -70,13 +70,13 @@ No 6 e no 12 meses a multa é atrelada ao desconto que o cliente recebeu, o que 
 
 ## 5. Regras de qualidade adotadas
 
-1. **Reajuste anual pelo IPCA** a cada 12 meses e na renovação; IPCA negativo ou zero aplica 7% ([Mercado Pago](https://www.mercadopago.com.br/blog/agencias-marketing-fees-mensais-reajuste-automatico)).
+1. **Reajuste anual pelo IPCA** a cada 12 meses e na renovação; IPCA zero ou negativo repete o reajuste anterior ([Mercado Pago](https://www.mercadopago.com.br/blog/agencias-marketing-fees-mensais-reajuste-automatico)).
 2. **Aprovação em 48 horas.** Material sem resposta não acumula, e a produção das outras vagas não trava.
 3. **Verba mínima de mídia de R$ 1.000,00/mês**, paga direto à plataforma. Sem verba, o anúncio não gera dado e o relatório fica vazio.
-4. **Volume adicional em blocos de 17%** (seção 6) e plano superior para quem passar de 2 blocos. Escopo e preço do plano superior a definir.
+4. **Volume adicional limitado a 1 bloco de 17% por mês** (seção 6) e plano superior para quem precisar de mais (seção 7).
 5. **Fidelidade explícita na venda**, com roteiro na oferta. Os casos de Reclame Aqui contra agências quase sempre começam com "me disseram que não tinha fidelidade" ([exemplo](https://www.reclameaqui.com.br/nso-marketing/cobranca-indevida-de-multa-por-cancelamento-de-contrato-de-marketing-digital-com-promessa-de-nao-fidelizacao-e-falhas-na-prestacao-do-servico_EYHsIxDLD74bSQzF/)).
 
-## 6. Volume adicional: os 17% fazem sentido?
+## 6. Volume adicional (decisão: 1 bloco por mês)
 
 ### Esforço estimado do Essentials por cliente/mês
 
@@ -91,24 +91,49 @@ Estimativa de referência. Substitua pelas horas reais depois dos primeiros clie
 | Atendimento e alinhamento | — | 3,0 |
 | **Total** | | **29,3h** |
 
-### Leitura
+### Bloco por esforço
 
-- **17% ≈ 5 horas** de produção. Isso equivale a cerca de **+3 posts** ou **+5 variações de anúncio**. Esse é o bloco coerente.
-- **17% para "mais 5 posts" ficaria barato:** 5 posts ≈ 7,5h ≈ 26% do esforço. Por isso o bloco foi definido em 3 posts.
-- **Capacidade:** 6 clientes × 29,3h ≈ 176h/mês, quase uma pessoa em tempo integral. Se todos comprarem 2 blocos, sobe para ≈ 236h. Daí o limite de 2 blocos por mês por cliente.
-- **Incentivo ao prazo longo:** o bloco é 17% da mensalidade contratada, então o anual paga menos por bloco (R$ 285,22) que o trimestral (R$ 421,22). Mantém a lógica de premiar o prazo longo.
+- 17% da mensalidade ≈ **5 horas** de produção.
+- **Bloco Conteúdo:** +3 posts (≈ 4,5h). **Bloco Anúncios:** +5 variações (≈ 5h). Os dois têm esforço equivalente, por isso o mesmo percentual.
+- O bloco é proporcional à mensalidade contratada: anual R$ 285,22 · semestral R$ 353,22 · trimestral R$ 421,22. O valor por hora do bloco fica igual ao do plano (≈ R$ 57/h no anual, ≈ R$ 85/h no trimestral), então o desconto do anual vale também para o bloco, sem perda de margem.
+- **Limite de 1 bloco por mês:** 6 clientes × (29,3h + 5h) ≈ 206h/mês no pior caso, contra 236h com 2 blocos.
 
-### Quando migrar para o plano superior
+## 7. Plano superior (Performance) — proposta
 
-| Situação | Mensalidade 12 meses | Leitura |
-|---|---:|---|
-| Essentials | R$ 1.677,77 | Base |
-| Essentials + 1 bloco | R$ 1.962,99 | Ajuste pontual, faz sentido |
-| Essentials + 2 blocos | R$ 2.248,21 | Teto do Essentials |
-| Plano superior | `[A DEFINIR]` | Deve custar menos por item que Essentials + 2 blocos e incluir gestão de tráfego |
+**Status: proposta para aprovação. Ainda não está na oferta, no aceite nem no HubSpot.**
 
-**Conclusão:** os 17% são coerentes como **ajuste pontual** (1 a 2 blocos). Cliente que pede volume extra todo mês deve ir para o plano superior, que precisa existir com preço por item menor que o do Essentials + 2 blocos. Sem isso, o bloco vira desconto disfarçado e consome a capacidade das 6 vagas.
+### Por que criar
 
-### IPCA negativo com reajuste de 7%: ponto de atenção
+Com o limite de 1 bloco, o teto do Essentials é a mensalidade + 17%. Cliente que precisa de mais volume ou de gestão de tráfego não cabe nele. Sem um plano acima, a saída seria desconto ou exceção, e as duas derrubam margem e qualidade.
 
-Com a regra adotada, IPCA de +0,5% gera reajuste de 0,5%, mas IPCA de −0,1% gera 7%. Em um questionamento, essa diferença pode ser vista como desproporcional. Alternativa mais defensável: **reajuste pelo maior valor entre o IPCA e um piso fixo** (ex.: 5%), aplicado sempre e informado na venda.
+### Escopo sugerido
+
+| Item | Essentials | Performance |
+|---|---:|---:|
+| Posts por mês | 10 | 20 |
+| Variações de anúncio | 5 | 10 |
+| Gestão de tráfego (Meta e Google) | — | Incluída |
+| Relatório semanal | Sim | Sim |
+| Reunião mensal de resultados (45 min) | — | Sim |
+| Automação de follow-up e triagem | Sim | Sim |
+| Verba mínima de mídia | R$ 1.000/mês | R$ 2.000/mês (sugestão) |
+| Esforço estimado | 29,3h | 59,3h |
+| Vagas ocupadas | 1 | 2 |
+
+### Preço sugerido
+
+Regra usada: **receita por vaga igual ou maior que a do Essentials** (o Performance ocupa 2 vagas) e **valor por hora menor que o do Essentials + 1 bloco** (para o upgrade compensar ao cliente).
+
+| Prazo | Mensalidade | Implantação | Total do contrato | Receita por vaga | Valor/hora |
+|---|---:|---:|---:|---:|---:|
+| 3 meses | R$ 4.977,77 | R$ 1.977,77 | R$ 16.911,08 | R$ 2.488,89 | R$ 83,94 |
+| 6 meses | R$ 4.177,77 | R$ 1.477,77 | R$ 26.544,39 | R$ 2.088,89 | R$ 70,45 |
+| 12 meses | R$ 3.377,77 | Isenta (em dia) | R$ 40.533,24 | R$ 1.688,89 | R$ 56,96 |
+
+Comparação no anual: Essentials + 1 bloco custa R$ 1.962,99 por ≈ 34h (R$ 57,23/h). O Performance entrega ≈ 59h, com gestão de tráfego, por R$ 56,96/h. Para o cliente que precisa de volume, o upgrade sai mais barato por hora. Para a METVI, cada vaga rende pelo menos o mesmo que no Essentials.
+
+Mesmas regras do Essentials: multa por plano, IPCA, aprovação em 48h, itens não acumulam, CPF limitado a 10%.
+
+### Reajuste pelo IPCA (regra adotada)
+
+IPCA zero ou negativo repete o percentual do reajuste anterior. No primeiro reajuste não há percentual anterior, então a mensalidade se mantém.

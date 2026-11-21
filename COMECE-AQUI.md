@@ -16,6 +16,7 @@ Expectativa de ganho, proposta aceita ou conversa promissora não contam como di
 - Ofertas: [Essentials](02-comercial/ofertas/oferta-essentials.md) · [Sprint de Conversão](02-comercial/ofertas/oferta-sprint-conversao.md) · [Reativação Express](02-comercial/ofertas/oferta-reativacao-express.md)
 - Aceites: [comercial curto](02-comercial/aceites/aceite-comercial-curto.md) · [reativação express](02-comercial/aceites/aceite-reativacao-express.md) · [essentials](02-comercial/aceites/aceite-essentials.md)
 - Mensagens: [rascunhos](02-comercial/mensagens/mensagens-rascunho.md)
+- HubSpot: [funil e pendências](02-comercial/hubspot/funil-hubspot.md) · [importação](02-comercial/hubspot/importacao-hubspot.md)
 - Entrega: [processo do Pix ao encerramento](05-entrega/README.md)
 - Marca: [posicionamento](01-marca/posicionamento.md)
 - Landing page: [03-marketing/landing-page/index.html](03-marketing/landing-page/index.html)

@@ -11,7 +11,7 @@ Abra [COMECE-AQUI.md](COMECE-AQUI.md) para a próxima ação do dia.
 | Pasta | Área | O que tem |
 |---|---|---|
 | [`01-marca/`](01-marca/) | Marca | Posicionamento, público ideal e mensagem central |
-| [`02-comercial/`](02-comercial/) | Comercial | Ofertas, aceites, estratégia de preço, mensagens, chats por status e modelo de pipeline |
+| [`02-comercial/`](02-comercial/) | Comercial | Ofertas, aceites, estratégia de preço, HubSpot (funil e importação), mensagens, chats por status e modelos |
 | [`03-marketing/`](03-marketing/) | Marketing | Landing page e peças de divulgação |
 | [`04-financeiro/`](04-financeiro/) | Financeiro | Plano de caixa, agenda e modelos de controle |
 | [`05-entrega/`](05-entrega/) | Entrega | Processo do Pix ao encerramento e modelos de onboarding, briefing, cronograma, relatório e encerramento |
