@@ -14,7 +14,7 @@ Expectativa de ganho, proposta aceita ou conversa promissora não contam como di
 ## Atalhos
 
 - Ofertas: [Essentials](02-comercial/ofertas/oferta-essentials.md) · [Sprint de Conversão](02-comercial/ofertas/oferta-sprint-conversao.md) · [Reativação Express](02-comercial/ofertas/oferta-reativacao-express.md)
-- Aceites: [comercial curto](02-comercial/aceites/aceite-comercial-curto.md) · [reativação express](02-comercial/aceites/aceite-reativacao-express.md)
+- Aceites: [comercial curto](02-comercial/aceites/aceite-comercial-curto.md) · [reativação express](02-comercial/aceites/aceite-reativacao-express.md) · [essentials](02-comercial/aceites/aceite-essentials.md)
 - Mensagens: [rascunhos](02-comercial/mensagens/mensagens-rascunho.md)
 - Entrega: [processo do Pix ao encerramento](05-entrega/README.md)
 - Marca: [posicionamento](01-marca/posicionamento.md)

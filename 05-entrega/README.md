@@ -33,7 +33,7 @@ Prazos contam a partir do **kickoff e do recebimento dos insumos**. Atraso de in
 |---|---|---|---|---|
 | [Sprint de Conversão](../02-comercial/ofertas/oferta-sprint-conversao.md) | 45 min | até 3 dias úteis | 45 min | 1 rodada, pedido em até 2 dias úteis |
 | [Reativação Express](../02-comercial/ofertas/oferta-reativacao-express.md) | 30 min | até 2 dias úteis | 30 min (treinamento) | Conforme aceite |
-| [Essentials](../02-comercial/ofertas/oferta-essentials.md) | A definir no aceite | Mensal | — | Relatório semanal |
+| [Essentials](../02-comercial/ofertas/oferta-essentials.md) | A definir no aceite | Mensal, por 3, 6, 12 meses ou mais | — | Relatório semanal |
 
 ## Regras de entrega
 
