@@ -32,7 +32,7 @@ Marque uma opção.
 ## Itens não usados no mês
 
 - O escopo é mensal e **não acumula** para os meses seguintes.
-- Entregas podem ser **antecipadas ou adiadas** para outro mês, desde que solicitadas e combinadas por escrito com antecedência mínima de `[__]` dias úteis antes do fim do mês.
+- Entregas podem ser **antecipadas ou adiadas** para outro mês, desde que solicitadas e combinadas por escrito com antecedência mínima de 5 dias úteis antes do fim do mês.
 - Pedidos de ajuste fora desse prazo não são aceitos: o item não usado no mês é considerado prestado e perdido, sem crédito ou reembolso.
 
 ## Não incluído
@@ -50,14 +50,23 @@ Investimento em mídia (pago pelo cliente direto à plataforma), produção de v
 
 Escolha do cliente — marque uma opção.
 
-- [ ] **Automática:** ao fim do prazo, renova pelo mesmo período e valor vigente, salvo aviso por escrito de qualquer das partes com `[__]` dias de antecedência.
+- [ ] **Automática:** ao fim do prazo, renova pelo mesmo período e valor vigente, salvo aviso por escrito de qualquer das partes com 30 dias de antecedência do término.
 - [ ] **Por novo aceite:** ao fim do prazo, o contrato se encerra; a continuidade depende de novo aceite.
 
 ## Cancelamento antecipado
 
-- O cancelamento antes do término exige aviso por escrito.
-- Multa de **47% sobre o valor total das mensalidades restantes** a partir do cancelamento.
-- Exemplo (12 meses, cancelamento após o 4º mês pago): 8 mensalidades restantes × R$ 1.677,77 = R$ 13.422,16 → multa de R$ 6.308,42.
+O cancelamento antes do término exige aviso por escrito. A multa depende de quem contrata — marque uma opção.
+
+- [ ] **Pessoa jurídica (CNPJ):** multa de **47% sobre o valor total das mensalidades restantes**.
+  - Exemplo (12 meses, cancelamento após o 4º mês pago): 8 × R$ 1.677,77 = R$ 13.422,16 → multa de R$ 6.308,42.
+- [ ] **Pessoa física (CPF):** multa de **10% sobre o valor total das mensalidades restantes**.
+  - Exemplo (12 meses, cancelamento após o 4º mês pago): 8 × R$ 1.677,77 = R$ 13.422,16 → multa de R$ 1.342,22.
+
+Em ambos os casos, o valor dos serviços já prestados no mês do cancelamento é devido integralmente.
+
+## Direito de arrependimento (somente CPF)
+
+Quando o contrato com pessoa física for fechado fora do estabelecimento (online, WhatsApp, telefone), o cliente pode desistir em até 7 dias da assinatura, sem multa, conforme o art. 49 do Código de Defesa do Consumidor. Para preservar esse prazo, o kickoff com CPF acontece a partir do 8º dia, salvo pedido expresso do cliente para começar antes.
 
 ## Inadimplência
 

@@ -27,14 +27,18 @@ Limite de **6 clientes recorrentes ativos** em atendimento e suporte. Com as vag
 
 ## Regras do contrato
 
-- **Renovação:** o cliente escolhe no aceite — automática pelo mesmo prazo ou mediante novo aceite.
-- **Cancelamento antecipado:** multa de 47% sobre o valor das mensalidades restantes.
-- **Itens não usados:** não acumulam. Antecipar ou adiar entregas para outro mês só com combinado prévio; pedido em cima da hora não é aceito e o item do mês é perdido.
+- **Renovação:** o cliente escolhe no aceite — automática pelo mesmo prazo (aviso de não renovação com 30 dias de antecedência) ou mediante novo aceite.
+- **Cancelamento antecipado:** multa sobre o valor das mensalidades restantes — 47% para CNPJ e 10% para CPF. CPF que contrata online tem 7 dias de arrependimento sem multa (art. 49 do CDC).
+- **Itens não usados:** não acumulam. Antecipar ou adiar entregas para outro mês só com combinado até 5 dias úteis antes do fim do mês; pedido fora desse prazo não é aceito e o item do mês é perdido.
 - **Kickoff:** 45 minutos.
 
 ## Mensagem de venda
 
 "A Metvi ajuda sua empresa a ter presença constante e mensagens mais claras, com processo mais rápido e menos retrabalho."
+
+## Análise de preço e regras
+
+Posicionamento no mercado, teto de receita e base jurídica das multas: [precificacao-essentials.md](../estrategia/precificacao-essentials.md).
 
 ## Fechamento
 
