@@ -11,9 +11,10 @@
 
 ## Checklist (mesmo dia do Pix)
 
-- [ ] Pix creditado e identificado no extrato (não só comprovante).
+- [ ] Pix creditado e identificado no extrato (não só comprovante), incluindo a implantação quando houver.
+- [ ] Essentials: verba de mídia de pelo menos R$ 1.000,00/mês confirmada pelo cliente.
 - [ ] Aceite "de acordo" salvo nesta pasta.
-- [ ] Capacidade conferida: menos de dois atendimentos ativos.
+- [ ] Capacidade conferida: menos de 2 atendimentos pontuais ativos (Sprint/Reativação) ou menos de 6 clientes Essentials.
 - [ ] Pipeline atualizado para `Fechado pago`.
 - [ ] Chat movido para `3-Em-Processamento`.
 - [ ] Mensagem de boas-vindas enviada (abaixo), após revisão.
@@ -37,4 +38,4 @@ Marque só o que se aplica à oferta.
 >
 > [LISTA DE INSUMOS]
 >
-> Nos prints, oculte nome e telefone dos clientes. O prazo de entrega começa a contar a partir do kickoff e do recebimento desses itens. Qualquer dúvida, é só chamar aqui.
+> Nos prints, oculte nome e telefone dos clientes. Cada material enviado para aprovação tem prazo de 48 horas para resposta. O prazo de entrega começa a contar a partir do kickoff e do recebimento desses itens. Qualquer dúvida, é só chamar aqui.

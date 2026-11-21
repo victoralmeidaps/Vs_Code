@@ -1,4 +1,4 @@
-# Oferta de entrada — Pacote Essentials
+# Oferta — Pacote Essentials
 
 ## Escopo mensal
 
@@ -9,17 +9,15 @@
 
 ## Investimento por prazo
 
-| Prazo | Mensalidade (a partir de) | Total do contrato |
-|---|---:|---:|
-| 3 meses | R$ 2.477,77 | R$ 7.433,31 |
-| 6 meses | R$ 2.077,77 | R$ 12.466,62 |
-| 12 meses | R$ 1.677,77 | R$ 20.133,24 |
+| Prazo | Mensalidade (a partir de) | Implantação | Total do contrato | Custo médio/mês |
+|---|---:|---:|---:|---:|
+| 3 meses | R$ 2.477,77 | R$ 1.477,77 | R$ 8.911,08 | R$ 2.970,36 |
+| 6 meses | R$ 2.077,77 | R$ 977,77 | R$ 13.444,39 | R$ 2.240,73 |
+| 12 meses | R$ 1.677,77 | Isenta (pagamentos em dia) | R$ 20.133,24 | R$ 1.677,77 |
 
-Prazos acima de 12 meses: sob consulta, com mensalidade definida no aceite.
+Prazos acima de 12 meses: sob consulta, com implantação isenta.
 
-### Argumento de prazo
-
-No anual, o cliente paga R$ 800,00 a menos por mês do que no trimestral (−32%) e garante uma das 6 vagas de atendimento pelo ano inteiro.
+**Verba mínima de mídia:** R$ 1.000,00/mês, paga pelo cliente direto à plataforma.
 
 ## Capacidade
 
@@ -27,10 +25,32 @@ Limite de **6 clientes recorrentes ativos** em atendimento e suporte. Com as vag
 
 ## Regras do contrato
 
-- **Renovação:** o cliente escolhe no aceite — automática pelo mesmo prazo (aviso de não renovação com 30 dias de antecedência) ou mediante novo aceite.
-- **Cancelamento antecipado:** multa sobre o valor das mensalidades restantes — 47% para CNPJ e 10% para CPF. CPF que contrata online tem 7 dias de arrependimento sem multa (art. 49 do CDC).
-- **Itens não usados:** não acumulam. Antecipar ou adiar entregas para outro mês só com combinado até 5 dias úteis antes do fim do mês; pedido fora desse prazo não é aceito e o item do mês é perdido.
+Detalhes e exemplos no [aceite](../aceites/aceite-essentials.md).
+
+- **Implantação:** 3 meses R$ 1.477,77 · 6 meses R$ 977,77 · 12 meses isenta enquanto as mensalidades estiverem em dia.
+- **Aprovação:** cliente responde cada material em até 48 horas; sem resposta, o item não acumula.
+- **Itens não usados:** não acumulam. Antecipar ou adiar só com combinado até 5 dias úteis antes do fim do mês.
+- **Reajuste:** IPCA a cada 12 meses e na renovação.
+- **Renovação:** o cliente escolhe — automática (aviso de 30 dias) ou por novo aceite.
+- **Cancelamento antecipado:**
+  - 3 meses: 47% das mensalidades restantes.
+  - 6 meses: R$ 400,00 por mês restante (diferença para a mensalidade cheia).
+  - 12 meses: R$ 800,00 por mês restante (diferença para a mensalidade cheia).
+  - CPF: multa limitada a 10% das mensalidades restantes; 7 dias de arrependimento quando contratado online (art. 49 do CDC).
 - **Kickoff:** 45 minutos.
+
+## Upgrade
+
+Quem precisar de mais volume ou gestão de tráfego vai para um plano superior. O Essentials não ganha itens avulsos nem desconto extra. Escopo e preço do plano superior: `[A DEFINIR]`.
+
+## Como apresentar os prazos
+
+Mostre os três prazos lado a lado, deixe o cliente escolher e seja claro sobre a fidelidade **antes** do aceite:
+
+> Trabalhamos com três formatos: 3, 6 ou 12 meses. Quanto maior o prazo, menor a mensalidade — no anual você paga R$ 800 a menos por mês que no trimestral e não paga implantação. Fica à vontade para escolher o que faz mais sentido agora. Só um ponto importante, para ficar tudo transparente: os três formatos têm prazo de contrato, e sair antes do fim gera uma multa rescisória, que está descrita no aceite. Se preferir começar com menos compromisso, o trimestral é o mais curto.
+
+- Nunca dizer "sem fidelidade" ou "cancela quando quiser" sem completar com a multa.
+- Enviar o aceite por escrito e esperar o "de acordo" antes do Pix.
 
 ## Mensagem de venda
 
@@ -39,7 +59,3 @@ Limite de **6 clientes recorrentes ativos** em atendimento e suporte. Com as vag
 ## Análise de preço e regras
 
 Posicionamento no mercado, teto de receita e base jurídica das multas: [precificacao-essentials.md](../estrategia/precificacao-essentials.md).
-
-## Fechamento
-
-Usar [`aceite-essentials.md`](../aceites/aceite-essentials.md) antes do primeiro Pix.

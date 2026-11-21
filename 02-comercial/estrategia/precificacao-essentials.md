@@ -34,27 +34,44 @@ O anual dá previsibilidade, mas é o que menos fatura por vaga. Com capacidade 
 - **10% é o maior percentual com baixa chance de ser derrubado.** Cobrar mais, com CPF, troca receita certa por risco de ação e de Reclame Aqui.
 - Contrato fechado online, por WhatsApp ou telefone dá ao CPF 7 dias de arrependimento sem multa (art. 49 do CDC). O kickoff de CPF fica para o 8º dia.
 
-### Pessoa jurídica (CNPJ): 47% sobre as mensalidades restantes — riscos
+### Pessoa jurídica (CNPJ) — riscos que continuam valendo
 
-- O art. 413 do Código Civil manda o juiz reduzir a multa "manifestamente excessiva", **inclusive entre empresas**. 47% pode ser reduzido se for contestado.
-- Microempresa e pequeno comerciante podem ser tratados como consumidor quando vulneráveis (teoria finalista mitigada, aplicada pelo STJ). Nesse caso, o raciocínio do CPF passa a valer.
-- Multa ligada a um benefício real concedido (como o desconto de prazo) se defende melhor que multa punitiva ([Âmbito Jurídico](https://ambitojuridico.com.br/e-permitido-cobrar-multa-por-cancelamento-de-contrato/), [Estado de Minas](https://www.em.com.br/emfoco/?p=50343)).
+- O art. 413 do Código Civil manda o juiz reduzir multa "manifestamente excessiva", **inclusive entre empresas**.
+- Microempresa e pequeno comerciante podem ser tratados como consumidor quando vulneráveis (teoria finalista mitigada, aplicada pelo STJ). Nesse caso, vale o raciocínio do CPF.
+- Multa ligada a um benefício real concedido se defende melhor que multa punitiva ([Âmbito Jurídico](https://ambitojuridico.com.br/e-permitido-cobrar-multa-por-cancelamento-de-contrato/), [Estado de Minas](https://www.em.com.br/emfoco/?p=50343)).
 
-### Alternativa mais blindada (recomendada para avaliar com o advogado)
+### Modelo adotado
 
-**Recalcular pelo prazo cumprido** em vez de multar. Se o cliente do anual sair no 4º mês, ele cumpriu um trimestral: paga a diferença entre o preço do trimestral e o do anual nos meses usados.
+| Plano | Multa | Peso sobre o valor restante | Lógica |
+|---|---|---:|---|
+| 3 meses | 47% das mensalidades restantes | 47% | Plano sem desconto: multa percentual |
+| 6 meses | R$ 400,00 por mês restante | 19,3% | Devolve o desconto do prazo nos meses não cumpridos |
+| 12 meses | R$ 800,00 por mês restante | 47,7% | Devolve o desconto do prazo nos meses não cumpridos |
+| CPF (qualquer plano) | Limitada a 10% das mensalidades restantes | 10% | Proteção contra redução judicial (CDC) |
 
-- Exemplo: 4 × (R$ 2.477,77 − R$ 1.677,77) = **R$ 3.200,00**.
-- É devolução do desconto recebido, não penalidade. Fica muito mais difícil de reduzir em juízo e funciona para CPF e CNPJ.
-- Pode ser combinada com a multa de 10% (CPF) ou substituir os 47% (CNPJ).
+No 6 e no 12 meses a multa é atrelada ao desconto que o cliente recebeu, o que reforça a defesa em caso de questionamento. No anual o peso final fica igual ao do trimestral (cerca de 47%), mas com uma justificativa concreta.
 
-## 4. Recomendações para proteger margem e qualidade
+## 4. Taxa de implantação
 
-Ainda **não** estão no aceite: cada uma depende da sua decisão.
+### Mercado
 
-1. **Taxa de implantação** (diagnóstico, configuração da automação, identidade dos posts): cobrar no trimestral e no semestral e isentar no anual. É trabalho real do primeiro mês, empurra para o anual e não mexe na mensalidade.
-2. **Reajuste anual pelo IPCA** escrito no aceite. Sem ele, o anual perde valor real todo ano ([Mercado Pago](https://www.mercadopago.com.br/blog/agencias-marketing-fees-mensais-reajuste-automatico)).
-3. **Prazo de aprovação do cliente** (ex.: 48h). Post não aprovado no prazo segue a regra de não acúmulo. Isso evita que a produção vire fila e derrube a qualidade das outras 5 vagas.
-4. **Verba mínima de mídia recomendada** na proposta. Criativo sem verba não gera dado, e o relatório semanal fica vazio.
-5. **Plano acima, não desconto:** quem quiser mais volume ou gestão de tráfego vai para um plano superior. O Essentials continua com escopo fechado.
-6. **Fidelidade explícita na proposta e na conversa**, não só no aceite. Os casos de Reclame Aqui contra agências quase sempre começam com "me disseram que não tinha fidelidade" ([exemplo](https://www.reclameaqui.com.br/nso-marketing/cobranca-indevida-de-multa-por-cancelamento-de-contrato-de-marketing-digital-com-promessa-de-nao-fidelizacao-e-falhas-na-prestacao-do-servico_EYHsIxDLD74bSQzF/)).
+- Agências brasileiras cobram setup único entre **R$ 1.500 e R$ 3.000** ([ALVK](https://alvk.com.br/quanto-custa-contratar-uma-agencia-de-marketing-digital-em-2026/), [Meme Digital](https://memedigital.com.br/quanto-custa-agencia-marketing-digital-sp/)).
+- No mercado internacional, US$ 1.000 a US$ 5.000 ([MarketerHire](https://marketerhire.com/blog/digital-marketing-agency-pricing)).
+
+### Valores adotados
+
+| Plano | Implantação | % da mensalidade | Custo médio/mês no contrato |
+|---|---:|---:|---:|
+| 3 meses | R$ 1.477,77 | 60% | R$ 2.970,36 |
+| 6 meses | R$ 977,77 | 47% | R$ 2.240,73 |
+| 12 meses | Isenta (em dia) | 0% | R$ 1.677,77 |
+
+**Por que esses valores:** ficam no piso do mercado, compatível com o público (pequeno negócio local) e com o escopo enxuto do Essentials. A diferença de custo médio entre trimestral e anual sobe para **R$ 1.292,59/mês**, o que torna o anual a escolha óbvia sem pressão de venda. A isenção do anual é condicionada a pagamentos em dia (atraso acima de 10 dias torna devida a implantação do semestral).
+
+## 5. Regras de qualidade adotadas
+
+1. **Reajuste anual pelo IPCA** a cada 12 meses e na renovação ([Mercado Pago](https://www.mercadopago.com.br/blog/agencias-marketing-fees-mensais-reajuste-automatico)).
+2. **Aprovação em 48 horas.** Material sem resposta não acumula, e a produção das outras vagas não trava.
+3. **Verba mínima de mídia de R$ 1.000,00/mês**, paga direto à plataforma. Sem verba, o anúncio não gera dado e o relatório fica vazio.
+4. **Plano superior em vez de desconto.** Escopo e preço a definir.
+5. **Fidelidade explícita na venda**, com roteiro na oferta. Os casos de Reclame Aqui contra agências quase sempre começam com "me disseram que não tinha fidelidade" ([exemplo](https://www.reclameaqui.com.br/nso-marketing/cobranca-indevida-de-multa-por-cancelamento-de-contrato-de-marketing-digital-com-promessa-de-nao-fidelizacao-e-falhas-na-prestacao-do-servico_EYHsIxDLD74bSQzF/)).
