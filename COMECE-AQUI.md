@@ -13,8 +13,8 @@ Expectativa de ganho, proposta aceita ou conversa promissora não contam como di
 
 ## Atalhos
 
-- Ofertas: [Essentials](02-comercial/ofertas/oferta-essentials.md) · [Sprint de Conversão](02-comercial/ofertas/oferta-sprint-conversao.md) · [Reativação Express](02-comercial/ofertas/oferta-reativacao-express.md)
-- Aceites: [comercial curto](02-comercial/aceites/aceite-comercial-curto.md) · [reativação express](02-comercial/aceites/aceite-reativacao-express.md) · [essentials](02-comercial/aceites/aceite-essentials.md)
+- Ofertas: [Essentials](02-comercial/ofertas/oferta-essentials.md) · [Performance](02-comercial/ofertas/oferta-performance.md) · [Sprint de Conversão](02-comercial/ofertas/oferta-sprint-conversao.md) · [Reativação Express](02-comercial/ofertas/oferta-reativacao-express.md)
+- Aceites: [comercial curto](02-comercial/aceites/aceite-comercial-curto.md) · [reativação express](02-comercial/aceites/aceite-reativacao-express.md) · [essentials](02-comercial/aceites/aceite-essentials.md) · [performance](02-comercial/aceites/aceite-performance.md)
 - Mensagens: [rascunhos](02-comercial/mensagens/mensagens-rascunho.md)
 - HubSpot: [funil e pendências](02-comercial/hubspot/funil-hubspot.md) · [importação](02-comercial/hubspot/importacao-hubspot.md)
 - Entrega: [processo do Pix ao encerramento](05-entrega/README.md)

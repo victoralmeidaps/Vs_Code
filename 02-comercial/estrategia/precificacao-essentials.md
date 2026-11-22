@@ -63,7 +63,7 @@ No 6 e no 12 meses a multa é atrelada ao desconto que o cliente recebeu, o que 
 | Plano | Implantação | % da mensalidade | Custo médio/mês no contrato |
 |---|---:|---:|---:|
 | 3 meses | R$ 1.477,77 | 60% | R$ 2.970,36 |
-| 6 meses | R$ 977,77 | 47% | R$ 2.240,73 |
+| 6 meses | R$ 738,89 | 36% (média entre 3 e 12 meses) | R$ 2.200,92 |
 | 12 meses | Isenta (em dia) | 0% | R$ 1.677,77 |
 
 **Por que esses valores:** ficam no piso do mercado, compatível com o público (pequeno negócio local) e com o escopo enxuto do Essentials. A diferença de custo médio entre trimestral e anual sobe para **R$ 1.292,59/mês**, o que torna o anual a escolha óbvia sem pressão de venda. A isenção do anual é condicionada a pagamentos em dia (atraso acima de 7 dias torna devida a implantação do semestral).
@@ -98,9 +98,9 @@ Estimativa de referência. Substitua pelas horas reais depois dos primeiros clie
 - O bloco é proporcional à mensalidade contratada: anual R$ 285,22 · semestral R$ 353,22 · trimestral R$ 421,22. O valor por hora do bloco fica igual ao do plano (≈ R$ 57/h no anual, ≈ R$ 85/h no trimestral), então o desconto do anual vale também para o bloco, sem perda de margem.
 - **Limite de 1 bloco por mês:** 6 clientes × (29,3h + 5h) ≈ 206h/mês no pior caso, contra 236h com 2 blocos.
 
-## 7. Plano superior (Performance) — proposta
+## 7. Plano superior (Performance)
 
-**Status: proposta para aprovação. Ainda não está na oferta, no aceite nem no HubSpot.**
+**Status: aprovado em 22/11/2026.** Oferta: [oferta-performance.md](../ofertas/oferta-performance.md). Aceite: [aceite-performance.md](../aceites/aceite-performance.md).
 
 ### Por que criar
 
@@ -116,21 +116,25 @@ Com o limite de 1 bloco, o teto do Essentials é a mensalidade + 17%. Cliente qu
 | Relatório semanal | Sim | Sim |
 | Reunião mensal de resultados (45 min) | — | Sim |
 | Automação de follow-up e triagem | Sim | Sim |
-| Verba mínima de mídia | R$ 1.000/mês | R$ 2.000/mês (sugestão) |
+| Verba mínima de mídia | R$ 1.000/mês | R$ 2.000/mês |
 | Esforço estimado | 29,3h | 59,3h |
 | Vagas ocupadas | 1 | 2 |
 
-### Preço sugerido
+### Preço
 
 Regra usada: **receita por vaga igual ou maior que a do Essentials** (o Performance ocupa 2 vagas) e **valor por hora menor que o do Essentials + 1 bloco** (para o upgrade compensar ao cliente).
 
 | Prazo | Mensalidade | Implantação | Total do contrato | Receita por vaga | Valor/hora |
 |---|---:|---:|---:|---:|---:|
 | 3 meses | R$ 4.977,77 | R$ 1.977,77 | R$ 16.911,08 | R$ 2.488,89 | R$ 83,94 |
-| 6 meses | R$ 4.177,77 | R$ 1.477,77 | R$ 26.544,39 | R$ 2.088,89 | R$ 70,45 |
+| 6 meses | R$ 4.177,77 | R$ 988,89 | R$ 26.055,51 | R$ 2.088,89 | R$ 70,45 |
 | 12 meses | R$ 3.377,77 | Isenta (em dia) | R$ 40.533,24 | R$ 1.688,89 | R$ 56,96 |
 
 Comparação no anual: Essentials + 1 bloco custa R$ 1.962,99 por ≈ 34h (R$ 57,23/h). O Performance entrega ≈ 59h, com gestão de tráfego, por R$ 56,96/h. Para o cliente que precisa de volume, o upgrade sai mais barato por hora. Para a METVI, cada vaga rende pelo menos o mesmo que no Essentials.
+
+Implantação do semestral = média entre trimestral e anual, mesma regra do Essentials.
+
+**Verba mínima de R$ 2.000/mês está dentro do mercado:** o pacote cobre duas plataformas (Meta e Google), o que dá cerca de R$ 1.000 por plataforma, a mesma referência mínima do Essentials. Fontes de mercado indicam R$ 3.000 a R$ 5.000 por mês somando fee e mídia como orçamento básico para redes + tráfego ([King Marketing](https://kingmarketing.com.br/post/quanto-custa-agencia-marketing-digital/)); o Performance fica acima disso por incluir produção maior.
 
 Mesmas regras do Essentials: multa por plano, IPCA, aprovação em 48h, itens não acumulam, CPF limitado a 10%.
 

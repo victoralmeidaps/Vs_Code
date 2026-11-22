@@ -34,11 +34,12 @@ Prazos contam a partir do **kickoff e do recebimento dos insumos**. Atraso de in
 | [Sprint de Conversão](../02-comercial/ofertas/oferta-sprint-conversao.md) | 45 min | até 3 dias úteis | 45 min | 1 rodada, pedido em até 2 dias úteis |
 | [Reativação Express](../02-comercial/ofertas/oferta-reativacao-express.md) | 30 min | até 2 dias úteis | 30 min (treinamento) | Conforme aceite |
 | [Essentials](../02-comercial/ofertas/oferta-essentials.md) | 45 min | Mensal, por 3, 6, 12 meses ou mais | — | Relatório semanal; itens não acumulam |
+| [Performance](../02-comercial/ofertas/oferta-performance.md) | 45 min | Mensal, por 3, 6, 12 meses ou mais | Reunião mensal de resultados | Relatório semanal; itens não acumulam |
 
 ## Regras de entrega
 
 1. **Sem Pix, sem início.** Exceção só se deliberada e registrada.
-2. **Capacidade:** no máximo dois atendimentos pontuais ativos somando Sprint e Reativação (ativo = do Pix até o encerramento registrado) e no máximo seis clientes recorrentes Essentials.
+2. **Capacidade:** no máximo dois atendimentos pontuais ativos somando Sprint e Reativação (ativo = do Pix até o encerramento registrado) e no máximo seis vagas recorrentes (Essentials ocupa 1, Performance ocupa 2).
 3. **Prometa só o que controla:** diagnóstico, materiais, implementação e prazo. Nunca leads, vendas ou faturamento.
 4. **Dados do cliente:** nenhum acesso, envio ou exportação sem autorização escrita e específica.
 5. **Nada publicado ou enviado** em nome do cliente sem aprovação expressa dele.

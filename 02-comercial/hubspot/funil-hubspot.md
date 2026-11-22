@@ -35,10 +35,10 @@ Diagnóstico da conta HubSpot da METVI feito em 21/11/2026, só com leitura. As 
 | 1 | Não há etapa entre "Negociação" e "Ganho" para **aceite enviado / aguardando Pix** | Negócio aceito mas não pago aparece como ganho ou some da previsão | Criar a etapa **Aceite / Aguardando Pix** (90%) |
 | 2 | "Fechado - Ganho" sem critério | Venda sem Pix entra como receita | Ganho = Pix creditado e identificado no extrato |
 | 3 | Prospecção (lista, contato, qualificação) não tem lugar | Funil começa no diagnóstico e o volume de abordagem não é medido | Prospecção fica no **contato** (Lead Status); o negócio nasce quando a chamada de qualificação é marcada |
-| 4 | Oferta Comercial não tem Essentials, Sprint de Conversão nem Reativação Express | Não dá para medir venda por oferta atual | Adicionar as 3 opções (ver dúvida no fim) |
+| 4 | Oferta Comercial não tem Essentials, Performance, Sprint de Conversão nem Reativação Express | Não dá para medir venda por oferta atual | Adicionar as 4 opções; as antigas são arquivadas conforme forem sendo atualizadas |
 | 5 | Faltam campos do contrato recorrente | Renovação, multa e reajuste ficam fora do CRM | Criar as propriedades da seção 4 |
 | 6 | Não há acompanhamento do pós-venda | Entrega e renovação ficam só no repositório | Criar o funil **METVI \| Entrega** (seção 4) |
-| 7 | Negócio real parado há mais de 70 dias, sem valor | Previsão de receita distorcida | Preencher valor e próximo passo, ou marcar como perdido com motivo |
+| 7 | Negócio real parado há mais de 70 dias, sem valor | Previsão de receita distorcida | Victor pede acesso ao Google Ads do cliente na segunda-feira (23/11); depois, preencher valor e próximo passo |
 | 8 | Negócio de exemplo do HubSpot | Polui relatórios | Excluir |
 | 9 | Catálogo de produtos vazio | Negócio sem itens, sem MRR e sem valor de contrato | Cadastrar os produtos (seção 3) |
 | 10 | Cotações, faturas e listas pedem nova autorização da conexão | Não dá para gerar cotação pelo Claude | Reconectar o HubSpot no Claude quando for usar cotações |
@@ -51,14 +51,17 @@ Diagnóstico da conta HubSpot da METVI feito em 21/11/2026, só com leitura. As 
 | ESS-06 | Essentials — 6 meses | R$ 2.077,77 | Mensal | 6 meses |
 | ESS-12 | Essentials — 12 meses | R$ 1.677,77 | Mensal | 12 meses |
 | IMP-ESS-03 | Implantação Essentials — 3 meses | R$ 1.477,77 | Única | — |
-| IMP-ESS-06 | Implantação Essentials — 6 meses | R$ 977,77 | Única | — |
+| IMP-ESS-06 | Implantação Essentials — 6 meses | R$ 738,89 | Única | — |
 | BLK-ESS-03 | Bloco adicional Essentials — 3 meses | R$ 421,22 | Única (por mês contratado) | — |
 | BLK-ESS-06 | Bloco adicional Essentials — 6 meses | R$ 353,22 | Única (por mês contratado) | — |
 | BLK-ESS-12 | Bloco adicional Essentials — 12 meses | R$ 285,22 | Única (por mês contratado) | — |
 | SPR-01 | Sprint de Conversão no WhatsApp | R$ 1.297,00 | Única | — |
 | REA-01 | Reativação Express de Agenda | R$ 597,00 | Única | — |
-
-O plano Performance entra no catálogo só depois de aprovado ([proposta](../estrategia/precificacao-essentials.md#7-plano-superior-performance--proposta)).
+| PERF-03 | Performance — 3 meses | R$ 4.977,77 | Mensal | 3 meses |
+| PERF-06 | Performance — 6 meses | R$ 4.177,77 | Mensal | 6 meses |
+| PERF-12 | Performance — 12 meses | R$ 3.377,77 | Mensal | 12 meses |
+| IMP-PERF-03 | Implantação Performance — 3 meses | R$ 1.977,77 | Única | — |
+| IMP-PERF-06 | Implantação Performance — 6 meses | R$ 988,89 | Única | — |
 
 ## 4. Estrutura recomendada
 
@@ -100,10 +103,10 @@ A conexão do Claude com o HubSpot cria e edita registros, mas não altera funis
 
 1. **Objetos → Negócios → Pipelines → METVI | Vendas Consultivas:** criar "Qualificação" (5%) antes de Diagnóstico e "Aceite / Aguardando Pix" (90%) antes de Fechado - Ganho.
 2. **Mesma tela → Criar pipeline:** "METVI | Entrega", com as etapas da seção 4.
-3. **Propriedades → Negócio → METVI | Oferta Comercial:** adicionar Essentials, Sprint de Conversão e Reativação Express.
+3. **Propriedades → Negócio → METVI | Oferta Comercial:** adicionar Essentials, Performance, Sprint de Conversão e Reativação Express. Arquivar as opções antigas à medida que os negócios forem atualizados.
 4. **Propriedades → Negócio → Criar propriedade:** as 6 da seção 4.
 5. **Negócios:** excluir o negócio de exemplo e atualizar o negócio parado.
 
-## Dúvida em aberto
+## Decisões
 
-As ofertas antigas do HubSpot (Diagnóstico METVI, Presença Local, Captação, Marketing + Vendas) não aparecem no repositório. Elas continuam sendo vendidas ou podem ser arquivadas?
+- **Ofertas antigas** (Diagnóstico METVI, Presença Local, Captação, Marketing + Vendas): atualizar e arquivar à medida que os negócios forem revisados (decisão de 22/11/2026).

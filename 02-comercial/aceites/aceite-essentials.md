@@ -20,13 +20,13 @@ Marque uma opção.
 | | Prazo | Mensalidade | Implantação (única) | Total do contrato |
 |---|---|---:|---:|---:|
 | [ ] | 3 meses | R$ 2.477,77 | R$ 1.477,77 | R$ 8.911,08 |
-| [ ] | 6 meses | R$ 2.077,77 | R$ 977,77 | R$ 13.444,39 |
+| [ ] | 6 meses | R$ 2.077,77 | R$ 738,89 | R$ 13.205,51 |
 | [ ] | 12 meses | R$ 1.677,77 | Isenta* | R$ 20.133,24 |
 | [ ] | Acima de 12: `[___]` meses | R$ `[___]` | Isenta* | R$ `[___]` |
 
 A implantação cobre diagnóstico, configuração da automação de follow-up e triagem, linha visual dos posts e estrutura dos anúncios. É paga junto com a primeira mensalidade.
 
-\* A isenção vale enquanto as mensalidades estiverem em dia. Mensalidade com mais de 7 dias de atraso torna devida a implantação do plano semestral (R$ 977,77).
+\* A isenção vale enquanto as mensalidades estiverem em dia. Mensalidade com mais de 7 dias de atraso torna devida a implantação do plano semestral (R$ 738,89).
 
 ## Escopo mensal incluído
 

@@ -12,7 +12,7 @@
 | Prazo | Mensalidade (a partir de) | Implantação | Total do contrato | Custo médio/mês |
 |---|---:|---:|---:|---:|
 | 3 meses | R$ 2.477,77 | R$ 1.477,77 | R$ 8.911,08 | R$ 2.970,36 |
-| 6 meses | R$ 2.077,77 | R$ 977,77 | R$ 13.444,39 | R$ 2.240,73 |
+| 6 meses | R$ 2.077,77 | R$ 738,89 | R$ 13.205,51 | R$ 2.200,92 |
 | 12 meses | R$ 1.677,77 | Isenta (pagamentos em dia) | R$ 20.133,24 | R$ 1.677,77 |
 
 Prazos acima de 12 meses: sob consulta, com implantação isenta.
@@ -27,7 +27,7 @@ Limite de **6 clientes recorrentes ativos** em atendimento e suporte. Com as vag
 
 Detalhes e exemplos no [aceite](../aceites/aceite-essentials.md).
 
-- **Implantação:** 3 meses R$ 1.477,77 · 6 meses R$ 977,77 · 12 meses isenta enquanto as mensalidades estiverem em dia (atraso acima de 7 dias torna devida a implantação do semestral).
+- **Implantação:** 3 meses R$ 1.477,77 · 6 meses R$ 738,89 · 12 meses isenta enquanto as mensalidades estiverem em dia (atraso acima de 7 dias torna devida a implantação do semestral).
 - **Aprovação:** cliente responde cada material em até 48 horas; sem resposta, o item não acumula.
 - **Itens não usados:** não acumulam. Antecipar ou adiar só com combinado até 5 dias úteis antes do fim do mês.
 - **Reajuste:** IPCA a cada 12 meses e na renovação; se o IPCA for zero ou negativo, repete o percentual do reajuste anterior.
