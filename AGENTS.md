@@ -1,41 +1,30 @@
 # AGENTS
 
-Instrucoes para agentes de IA neste workspace.
+Instruções para agentes de IA neste repositório.
 
-## Objetivo do Projeto
+## Contexto
 
-- Este projeto entrega um assistente desktop local do Deadpool em Electron.
-- Os previews web sao materiais auxiliares e nao substituem o backend do aplicativo.
-- O foco atual e manter um fluxo de atendimento claro, sem expor narracao interna do agente.
+- Este repositório é a base operacional da METVI (agência de branding e performance).
+- O conteúdo é documento de negócio (Markdown, CSV, HTML), não software.
+- Mapa das pastas: [README.md](README.md). Rotina diária: [COMECE-AQUI.md](COMECE-AQUI.md).
 
-## Inicio Rapido
+## Regras obrigatórias
 
-- Aplicativo funcional: `npm run deadpool:widget`
-- Preview visual legado: `open deadpool-chat.html` (nao possui o backend do Electron)
-- Referencia geral: [README.md](README.md)
+- **Nunca** versionar dados reais (leads, contatos, valores, contas). Eles ficam em `dados/`, que está no `.gitignore`. No Git só entram modelos com o cabeçalho.
+- **Nunca** enviar mensagem, proposta, cobrança ou publicação em nome do Victor. Prepare o rascunho e entregue para aprovação.
+- Não inventar números, prazos, preços ou resultados. Se faltar dado, deixe em branco e sinalize.
+- Não duplicar arquivos: referencie com link relativo.
+- Material de cliente preenchido vai para `dados/clientes/<nome>/`, nunca para `05-entrega/modelos/`.
 
-## Arquivos Principais
+## Padrões
 
-- [deadpool-agent.js](deadpool-agent.js): fachada segura entre o renderer e o backend Electron.
-- [agent/orchestrator.js](agent/orchestrator.js): loop do agente, chamadas de ferramenta e confirmacoes.
-- [deadpool-chat-agent-preview.html](deadpool-chat-agent-preview.html): chat funcional com input e eventos de ferramenta.
-- [deadpool-chat.html](deadpool-chat.html): demonstracao visual de personagem e rotina.
+- Arquivo novo vai para a pasta da área (`01-marca`, `02-comercial`, `03-marketing`, `04-financeiro`, `05-entrega`, `docs`).
+- Nomes em minúsculas com hífen; planilhas de controle em `MAIÚSCULAS.csv`.
+- Ao mover ou renomear arquivo, use `git mv` e atualize todos os links que apontam para ele.
+- Texto em português do Brasil, direto e orientado a ação.
 
-## Convencoes de Atendimento do Deadpool
+## Antes de concluir
 
-- O Deadpool deve seguir fluxo de atendimento em 3 etapas: acolhimento, acompanhamento e encerramento.
-- O Deadpool pode ser sarcastico e direto, mas sempre util e respeitoso.
-- O Deadpool NAO deve explicar o processo interno que esta executando.
-- O Deadpool NAO deve descrever etapas tecnicas para o usuario final (ex.: "estou processando", "vou chamar ferramenta", "estou registrando", "estou pensando").
-- O Deadpool deve responder com foco em resultado, proximo passo e clareza para o usuario.
-
-## Checklist Antes de Concluir Mudancas
-
-- Validar se nenhuma resposta do Deadpool contem auto-narracao de atividade interna.
-- Validar se o texto final segue o fluxo de atendimento (acolher, conduzir, fechar).
-- Priorizar mensagens curtas, objetivas e orientadas a acao.
-
-## Notas
-
-- Se houver conflito entre estilo e fluxo de atendimento, priorizar o fluxo de atendimento.
-- Para detalhes de comportamento no codigo, aplicar a instrucao de arquivo em [.github/instructions/deadpool-atendimento.instructions.md](.github/instructions/deadpool-atendimento.instructions.md).
+- `npm run lint:md` sem erros.
+- Nenhum link quebrado para arquivo movido.
+- `git status` sem nada de `dados/`.
