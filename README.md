@@ -15,7 +15,7 @@ Abra [COMECE-AQUI.md](COMECE-AQUI.md) para a próxima ação do dia.
 | [`03-marketing/`](03-marketing/) | Marketing | Landing page e peças de divulgação |
 | [`04-financeiro/`](04-financeiro/) | Financeiro | Plano de caixa, agenda e modelos de controle |
 | [`05-entrega/`](05-entrega/) | Entrega | Processo do Pix ao encerramento e modelos de onboarding, briefing, cronograma, relatório e encerramento |
-| [`docs/`](docs/) | Operação interna | Guias de ferramentas e padrões do repositório |
+| [`docs/`](docs/) | Operação interna | Guias de ferramentas, padrões do repositório e consulta jurídica dos aceites |
 | `dados/` | Dados reais | Planilhas preenchidas (leads, caixa) e pastas de clientes ativos. Fica só na sua máquina, fora do Git |
 
 ## Regras da casa
